@@ -50,7 +50,7 @@ const App = () => {
 
   return (
     <ChakraProvider theme={theme}> 
-      <Container marginTop={"20px"} width={{ base: '100%', md: '37%', sm: '20%' }}>
+      <Container marginTop={"20px"} marginBottom={"20px"} width={{ base: '100%', md: '37%', sm: '20%' }}>
         <Heading>Ugly Cat Image Generator 🚀</Heading>
         <Text marginBottom={"15px"}>
           This react application is a wrapper for Images API by OPENAI
