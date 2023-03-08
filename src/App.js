@@ -50,7 +50,7 @@ const App = () => {
 
   return (
     <ChakraProvider theme={theme}> 
-      <Container marginTop={"20px"} width={"512px"}>
+      <Container marginTop={"20px"} width={{ base: '100%', md: '37%', sm: '20%' }}>
         <Heading>Ugly Cat Image Generator 🚀</Heading>
         <Text marginBottom={"15px"}>
           This react application is a wrapper for Images API by OPENAI
@@ -62,14 +62,14 @@ const App = () => {
           </Link>
         </Text>
 
-        <Wrap marginBottom={"15px"}>
+        <Wrap marginBottom={"15px"} >
           <Input
             value={prompt}
             onChange={(e) => updatePrompt(e.target.value)}
-            width={"370px"}
+            width={"75%"}
             focusBorderColor={"blue.100"}
           ></Input>
-          <Button onClick={(e) => generate(prompt)} colorScheme={"yellow"}>
+          <Button onClick={(e) => generate(prompt)} colorScheme={"yellow"} textColor={"black"}>
             Generate
           </Button>
         </Wrap>
